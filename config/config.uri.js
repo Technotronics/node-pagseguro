@@ -18,7 +18,7 @@ module.exports = {
       return 'https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=' + config.email + '&token=' + config.token;
     },
     payment : function (paymentCode) {
-      return 'https://sandbox.pagseguro.uol.com.br/v3/checkout/payment.html?code=' + paymentCode;
+      return 'https://sandbox.pagseguro.uol.com.br/v2/checkout/payment.html?code=' + paymentCode;
     },
     notificationConsult : function (notificationCode, config) {
       return 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/notifications/' + notificationCode + '?email=' + config.email + '&token=' + config.token;
