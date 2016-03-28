@@ -10,7 +10,7 @@ module.exports = {
       return 'https://ws.pagseguro.uol.com.br/v3/transactions/notifications/' + notificationCode + '?email=' + config.email + '&token=' + config.token;
     },
     transactionConsult : function (transactionCode, config) {
-      return 'https://ws.pagseguro.uol.com.br/v3/transactions/' + paymentCode + notificationCode + '?email=' + config.email + '&token=' + config.token;
+      return 'https://ws.pagseguro.uol.com.br/v3/transactions/' + transactionCode + '?email=' + config.email + '&token=' + config.token;
     }
   },
   sandbox : {
@@ -24,7 +24,7 @@ module.exports = {
       return 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/notifications/' + notificationCode + '?email=' + config.email + '&token=' + config.token;
     },
     transactionConsult : function (transactionCode, config) {
-      return 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/' + paymentCode + notificationCode + '?email=' + config.email + '&token=' + config.token;
+      return 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/' + transactionCode + '?email=' + config.email + '&token=' + config.token;
     }
   }
 };
